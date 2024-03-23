@@ -1,0 +1,155 @@
+
+body{
+  background-color: #e9e5e3
+}
+
+
+#navbar {
+  background-color: #e296ab;
+  padding: 10px 0;
+  top: 0;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  
+}
+
+#navbar ul li {
+  display: inline;
+}
+
+#navbar ul li a {
+  color: #f0e8ee;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: "Vibur", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+ #navbar ul li a:hover {
+  color: rgb(229, 0, 115);
+} 
+
+.content {
+  padding-top: 70px; /* Adjust according to the height of your navigation bar */
+}
+
+/* Style for active link */
+#navbar ul li a.active {
+  background-color: #da227e;
+}
+
+/* Style for sticky navigation */
+#navbar.sticky {
+  /* position: fixed; */
+  top: 0;
+  width: 300%;
+  animation: slide-down 0.5s;
+}
+
+@keyframes slide-down {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.icon{
+  /* float: left; */
+  /* z-index: 1001; */
+  text-align: center;
+  align-items: center;
+  padding-left: 10px;
+
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 1600px;
+  height:auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color:  #e296ab; 
+  color: #fff; 
+  padding: 30px 130px; 
+  font-size: 50px; 
+  text-align: center;
+  font-family: "Vibur", cursive;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+/*logo name*/
+.logo{
+  color:rgb(240, 155, 199);
+      font-family: "El Messiri", sans-serif;
+      font-optical-sizing:auto;
+      font: weight 600px;;
+      font-style: normal;
+      font-size: 40px;
+    }
+    .bodyWrapper{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 40px;
+      gap: 20px;
+    }
+    
+    .galleryContainer{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    
+    .galleryWrapper{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 20px;
+    
+    }
+    .galleryWrapper p{
+      text-align: center;
+      font-family: "Vibur", cursive;
+      font-weight: 400;
+      font-style: normal;
+      margin-top: 10px;
+      font-size: 25px;
+
+    
+    }
+    
+    .galleryWrapper img{
+      width: 450px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+footer{
+      height: 50px;
+      color: #c4176d;
+      text-align: center;
+      margin-top: 15px;
+    }
+  

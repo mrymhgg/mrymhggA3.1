@@ -1,0 +1,174 @@
+ html {
+  font-size: 20px;
+ }
+ 
+ body{
+    background-color:#fbe9f1;
+  }
+
+  #navbar {
+    background-color: #f0a2ba;
+    padding: 10px 0;
+    top: 0;
+}
+  
+  #navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    
+  }
+  
+  #navbar ul li {
+    display: inline;
+  }
+  
+  #navbar ul li a {
+    color: #f0e8ee;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: "Vibur", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+  }
+  
+   #navbar ul li a:hover {
+    color: rgb(229, 0, 115);
+  } 
+  
+  .content {
+    padding-top: 70px; /* Adjust according to the height of your navigation bar */
+  }
+  
+  /* Style for active link */
+  #navbar ul li a.active {
+    background-color: #da227e;
+  }
+  
+  /* Style for sticky navigation */
+  #navbar.sticky {
+    /* position: fixed; */
+    top: 0;
+    width: 300%;
+    animation: slide-down 0.5s;
+  }
+  
+  @keyframes slide-down {
+    from {
+      top: -50px;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  .icon{
+    /* float: left; */
+    /* z-index: 1001; */
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+  
+  }
+  
+  /*logo name*/
+  .logo{
+    color:rgb(240, 155, 199);
+        font-family: "El Messiri", sans-serif;
+        font-optical-sizing:auto;
+        font: weight 600px;;
+        font-style: normal;
+        font-size: 40px;
+      }
+
+     
+      .Name {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        padding: 50px;
+      }
+
+      .Name h1{
+        font-size: 95px;
+        color: #d63b81;
+        text-align: center;
+        font-family: "Vibur", cursive;
+    font-weight: 400;
+    font-style: normal;
+       }
+
+       .Name .nameOffset {
+        padding-left: 300px;
+        margin-top: 50px;
+       }
+
+       .part1 {
+        width: 40rem;
+        margin: 80px auto;
+        background-color: #ed73b4;
+        color: rgb(245, 205, 225);
+        border-radius: 0 20px 0 20px;
+        padding: 40px;
+        text-align: center;
+        font-family: "El Messiri", sans-serif;
+        font-optical-sizing:auto;
+        font: weight 600px;;
+        font-style: normal;
+      
+      }
+/*       
+      .part1{
+          padding: 20px;
+          margin: 30px;
+          border: 10px solid var(--primary);
+          font-size:19px;
+          text-align: left;
+
+      
+      } */
+      
+      .content h2{
+        font-size: 45px;
+        color: #d63b81;
+        text-align: center;
+        font-family: "El Messiri", sans-serif;
+        font-optical-sizing:auto;
+        font: weight 600px;;
+        font-style: normal;
+        margin-top: 70px;
+        
+       }
+
+       .nextpage button{
+        font-size: 30px;
+        color: #ecc0d6;
+        background-color: #eb91b5;
+        text-align: center;
+        font-family: "Vibur", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
+       }
+
+.nextpage {
+  display: grid;
+  place-items: center;
+  
+}
+.nextpage a:visited{
+  color: rgb(13, 1, 1);
+
+}
+
+
+footer{
+    height: 50px;
+    color: #c4176d;
+    text-align: center;
+    margin-top: 15px;
+  }
+  

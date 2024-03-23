@@ -1,0 +1,201 @@
+body {
+  background-color: #f3d4d9;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the body takes full viewport height */
+  width: 100vw; /* Ensure the body takes full viewport width */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  font-family: Verdana, sans-serif; /* Unify font-family declaration */
+}
+
+#navbar {
+  background-color: #ed90ab;
+  padding: 10px 0;
+  position: fixed; /* Make navbar fixed at the top */
+  width: 100%; /* Full width */
+  top: 0;
+  z-index: 10; /* Ensure navbar is above other content */
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#navbar ul li {
+  display: inline;
+}
+
+#navbar ul li a {
+  color: #f0e8ee;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: "Vibur", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+#navbar ul li a:hover {
+  color: rgb(229, 0, 115);
+}
+
+.content {
+  padding-top: 80px; /* Adjust padding to account for fixed navbar */
+}
+
+.images-container {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Align images vertically */
+  gap: 20px; /* Spacing between images */
+  margin-bottom: 30px; /* Add some space below the images */
+}
+
+.individual-img {
+  width: 200px; /* Set a fixed width for all images */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the frame; might crop the image */
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Images */
+.img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust as needed */
+}
+
+.img1 { 
+  display: flex; /* Add flex display to ensure alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-image: url("../images/wallpaper9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+}
+
+.logo {
+  color: rgb(240, 155, 199);
+  font-family: "El Messiri", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.h1 {
+  color: rgb(245, 198, 220);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: larger;
+  font-family: "PT Serif", serif;
+}
+
+.h1 h1 {
+  color: #ed90ab;
+  font-family: 'Times New Roman';
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.h1 p {
+  width: 1200px;
+  background: #ed90ab;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.slider-wrapper {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: auto;
+}
+
+.slides-container {
+  display: flex;
+/*  overflow: scroll;*/
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  list-style: none;
+  padding: 10px;
+  overflow-y: hidden;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slides-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.slide img {
+  max-width: 100%; /* Ensure images are not bigger than the slide */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space/margin under images */
+}
+
+.slide {
+  width: 100vw; /* Example: each slide takes full viewport width */
+  flex-shrink: 0; /* Prevent flex items from shrinking */
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+#slide-arrow-prev {
+  left: 10px; /* Adjust as needed */
+}
+
+#slide-arrow-next {
+  right: 10px; /* Adjust as needed */
+}
+
+.footer {
+  height: 50px;
+  color: #c4176d;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .h1 p {
+      width: 90%;
+      font-size: 18px;
+  }
+  #navbar ul li a {
+      font-size: 18px;
+  }
+  .slide-arrow {
+      height: 3rem;
+      font-size: 2rem;
+  }
+}
